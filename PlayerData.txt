@@ -1,7 +1,7 @@
 This file will be for accessing player data.
 
 The variable I use for the in game player is "Player" (You can use this without importing any module or accept this as argument)
-
+ 
 All player data you can access:
  - General player data
 Player.score(int): Increse or decrese the score of the player
