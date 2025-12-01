@@ -1,5 +1,5 @@
 # GridClasses_Modding
-This Repo is for people who want to mod my game.
+This Repo is for people who want to mod GridClasses.
 
 Things found in this repo:
 
