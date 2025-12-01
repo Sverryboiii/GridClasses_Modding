@@ -1,6 +1,6 @@
 In this file I will explain how to mod my game.
 
-
+ 
 Summary:
 Make a function to change a tiles behavior: def Tile{tile_id}():
 Tell GridClasses (not) to continue the tile behavior check: return True if You also want normal behavior, return False if you don't
