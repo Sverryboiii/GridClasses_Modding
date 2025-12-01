@@ -1,0 +1,20 @@
+Tile Id's:
+
+"Boss": Boss tile
+0: Grass tile
+1: Rock pile tile
+2: Door tile
+3: Scorch tile
+4: Normal chest tile
+5: Key tile
+6: Spikes tile
+7: Attack boss sword tile
+8: Rare chest tile
+9: Boss attack indicator tile
+10: Explosion tile
+11: ShadeFangs tile
+12: GrimHowl tile
+13: WraithGolem tile
+14: Epic chest tile
+"x_paper": Paper for showing the y value of something important in the game
+"y_paper": Paper for showing the x value of something important in the game
