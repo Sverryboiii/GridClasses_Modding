@@ -1,0 +1,25 @@
+This file will be for accessing player data.
+
+The variable I use for the in game player is "Player" (You can use this without importing any module or accept this as argument)
+
+All player data you can access:
+ - General player data
+Player.score(int): Increse or decrese the score of the player
+Player.kills(int): Shows how much kills the player has (Sometimes used for door access)
+Player.health(int): Increse or decrese the health of the player
+Player.max_health(int): Increse or decrese the max health of the player (Only affects healing, so you must check this manually)
+Player.x, Player.y(int, int): Change the pos of the player. (These values are x = column, y = row)
+Player.inventory(list[dict]): Change what the player has in their inventory
+ - Buffing player data
+Player.life_steal(int): Changes how much percent of the life of enemies the player steals after killing
+Player.damage_multiplier(int): Change how much x damage the player does
+Player.Magic_damage(int): Changes the magic damage of the player. Magic damage can't be blocked
+Player.protection(int): Change the base protection of the player
+Player.damage_resistance(int): Change how much damage is blocked
+
+
+Now how does the protection and damage stuff work?
+Formula (Enemy attacks player):
+Player.health -= (enemy.damage * enemy.damage_multiplier - Player.damage_resistance) / Player.protection + enemy.magic_damage
+Formula (Player attacks Enemy):
+enemy.health -= (Player.damage * Player.damage_multiplier - enemy.damage_resistance) / enemy.protection + Player.magic_damage
