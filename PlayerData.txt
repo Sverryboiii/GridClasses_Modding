@@ -10,6 +10,8 @@ Player.health(int): Increse or decrese the health of the player
 Player.max_health(int): Increse or decrese the max health of the player (Only affects healing, so you must check this manually)
 Player.x, Player.y(int, int): Change the pos of the player. (These values are x = column, y = row)
 Player.inventory(list[dict]): Change what the player has in their inventory
+ - Special player data
+Player.room(int): Shows the room that the player is in (only used for Trial of Abyss)
  - Buffing player data
 Player.life_steal(int): Changes how much percent of the life of enemies the player steals after killing
 Player.damage_multiplier(int): Change how much x damage the player does
