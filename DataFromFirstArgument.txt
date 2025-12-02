@@ -17,4 +17,6 @@ You can get 2 items from this: width and height. How to get them: data.map_size[
  - data.dt:
 This is the delta time (miliseconds passed since last frame). You can use this for your own timers.
  - data.screen:
-This is the display so you can display anything you want! (GridClasses is made with pygame so you can stop searching what you need to do)
+This is the display so you can display anything you want (GridClasses is made with pygame so you can stop searching what you need to do)!
+ - data.font:
+You can use this font to create text (to display text on the screen you got to go take a pygame lesson).
