@@ -1,1 +1,20 @@
 This file will go over all the data rechieved from the first argument in a function.
+
+For those who don't know what I said:
+
+A function is something like this:
+def {name}():
+You accept arguments like this:
+def {name}(argument):
+With that knowledge lets dive into my modding system again.
+
+In the whole file I use "data" for the first argument.
+
+All the different thing you can get from the first argument:
+
+ - data.map_size:
+You can get 2 items from this: width and height. How to get them: data.map_size[0] for width and data.map_size[1] for height
+ - data.dt:
+This is the delta time (miliseconds passed since last frame). You can use this for your own timers.
+ - data.screen:
+This is the display so you can display anything you want! (GridClasses is made with pygame so you can stop searching what you need to do)
