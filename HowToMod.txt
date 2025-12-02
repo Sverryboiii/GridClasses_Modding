@@ -2,7 +2,7 @@ In this file I will explain how to mod my game.
 
 WARNING: If you mod your game your account has a permanent watermark!
 
- 
+
 Summary:
 Make a function to change a tiles behavior: def Tile{tile_id}():
 Tell GridClasses (not) to continue the tile behavior check: return True if You also want normal behavior, return False if you don't
@@ -18,7 +18,7 @@ Don't see the path? Run my game once and it should automaticly create Mods.py
 
 If found open it in a text editor (You will see a basic explanation, but you can ignore that).
 
-Step 2(Your first tile change):
+Step 2 (Your first tile change):
 Now that you have opened Mods.py in your text editor you can change tile behavior!
 To change tile behavior you need functions writen as such:
 
@@ -44,8 +44,23 @@ def Tile0():
 Next up you don't want the grass tile to behave as normal after that.
 That's easily done with python's return function, so your final function will be:
 
-def Tile0():          # Tell the game the behavior of grass (id: 0) must change
-  Player.health += 1  # Tell the game to give the player +1 health
-  return False        # Tell the game NOT to continue with the tile check
+def Tile0():          # Tell GridClasses the behavior of grass (id: 0) must change
+  Player.health += 1  # Tell GridClasses to give the player +1 health
+  return False        # Tell GridClasses NOT to continue with the tile check
 
 Now you can change all stats of the player by just making siple functions!
+
+
+Step 3 (The second updater):
+With this script you can do something every second!
+
+To start this you need to define the function "Second_Updater" like this:
+
+def Second_Updater():
+
+In the updater you can yet again do whatever you want!
+Now we are going to change the players x to be one lower every time! (You need to avoid putting the player too far left though!)
+
+def Second_Updater(): # Tell GridClasses to do something every second
+  if Player.x > 0:    # Only change the player's x if it's higher than 0
+    Player.x -= 1     # Tell GridClasses to lower the x position of the player by 1 (This means the player goes up (Check PlayerData.txt))
