@@ -1,5 +1,7 @@
 In this file I will explain how to mod my game.
 
+WARNING: If you mod your game your account has a permanent watermark!
+
  
 Summary:
 Make a function to change a tiles behavior: def Tile{tile_id}():
