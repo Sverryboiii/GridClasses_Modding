@@ -1,0 +1,8 @@
+Here I will let post all the different functions and their uses as a list.
+
+ - Tile{id}
+Change the behavior of a tile.
+ - Second_Updater
+Code that gets runned every second.
+ - Frame_Updater
+Code that gets runned every frame.
