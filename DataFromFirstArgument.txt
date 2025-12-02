@@ -20,3 +20,5 @@ This is the delta time (miliseconds passed since last frame). You can use this f
 This is the display so you can display anything you want (GridClasses is made with pygame so you can stop searching what you need to do)!
  - data.font:
 You can use this font to create text (to display text on the screen you got to go take a pygame lesson).
+ - data.new_pos:
+This gives a tuple of the position of the player (x, y)
