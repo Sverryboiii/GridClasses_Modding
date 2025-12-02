@@ -12,6 +12,7 @@ In game player data. (It's not possible to change data of your account!
 
 
 Important:
+For a quick look at all the different types of functions you can use go to Functions.txt!
 After defining a function you MUST accept a argument for the data!
 So you do something like this:
 def MyFunction(data): # Now you accepted data as argument. You may change the name, but everything with data in my examples must be your
@@ -57,7 +58,7 @@ def Tile0(data):          # Tell GridClasses the behavior of grass (id: 0) must 
 Now you can change all stats of the player by just making siple functions!
 
 
-Step 3 (The second updater):
+Step 3 (The updaters):
 With this script you can do something every second!
 
 To start this you need to define the function "Second_Updater" like this:
@@ -70,3 +71,11 @@ Now we are going to change the players x to be one lower every time! (You need t
 def Second_Updater(data): # Tell GridClasses to do something every second
   if Player.x > 0:    # Only change the player's x if it's higher than 0
     Player.x -= 1     # Tell GridClasses to lower the x position of the player by 1 (This means the player goes up (Check PlayerData.txt))
+
+But what if you want to have something done every frame like text?
+Well that is also possible! Just change the name of your function to "Frame_Updater" as such:
+
+def Frame_Updater(data):
+  # This is some higher level code. You don't have to understand this!
+  text = data.font.render("This is a modded text!", True, (255, 255, 255)
+  screen.blit(text, (0, 0)
