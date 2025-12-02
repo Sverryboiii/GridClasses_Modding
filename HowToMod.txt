@@ -11,8 +11,14 @@ Changable stuff:
 In game player data. (It's not possible to change data of your account!
 
 
+Important:
+After defining a function you MUST accept a argument for the data!
+So you do something like this:
+def MyFunction(data): # Now you accepted data as argument. You may change the name, but everything with data in my examples must be your
+                      # first argument!
 
-Step 1 (Mods.py):
+
+Step 1 (find Mods.py):
 To change a tile you first need this path: C:\Users\[Your PC username]\AppData\Local\GridClasses\Mods\Mods.py
 Don't see the path? Run my game once and it should automaticly create Mods.py
 
@@ -22,7 +28,7 @@ Step 2 (Your first tile change):
 Now that you have opened Mods.py in your text editor you can change tile behavior!
 To change tile behavior you need functions writen as such:
 
-def Tile{tile_id}():
+def Tile{tile_id}(data):
 
 Where the tile_id is the id of the tile you want to change.
 Lets say you want to give the player 1 health every time they step on a grass tile and you dont want to let the grass do it's own behavior.
@@ -30,13 +36,13 @@ So now you have a clear vision of what you want.
 First you get the Tile_id of grass (which is 0)
 Now you should have this:
 
-def Tile0():
+def Tile0(data):
 
 After that you want to change the player to have 1 more health on touching grass.
 
 So you add "Player.health += 1" to your script as such:
 
-def Tile0():
+def Tile0(data):
   Player.health += 1
 
 (You must have an indent in python, else it will break the game)
@@ -44,7 +50,7 @@ def Tile0():
 Next up you don't want the grass tile to behave as normal after that.
 That's easily done with python's return function, so your final function will be:
 
-def Tile0():          # Tell GridClasses the behavior of grass (id: 0) must change
+def Tile0(data):          # Tell GridClasses the behavior of grass (id: 0) must change
   Player.health += 1  # Tell GridClasses to give the player +1 health
   return False        # Tell GridClasses NOT to continue with the tile check
 
@@ -56,11 +62,11 @@ With this script you can do something every second!
 
 To start this you need to define the function "Second_Updater" like this:
 
-def Second_Updater():
+def Second_Updater(data):
 
 In the updater you can yet again do whatever you want!
 Now we are going to change the players x to be one lower every time! (You need to avoid putting the player too far left though!)
 
-def Second_Updater(): # Tell GridClasses to do something every second
+def Second_Updater(data): # Tell GridClasses to do something every second
   if Player.x > 0:    # Only change the player's x if it's higher than 0
     Player.x -= 1     # Tell GridClasses to lower the x position of the player by 1 (This means the player goes up (Check PlayerData.txt))
