@@ -1,0 +1,1 @@
+This file will go over all the data rechieved from the first argument in a function.
