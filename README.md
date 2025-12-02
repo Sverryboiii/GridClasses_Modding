@@ -8,6 +8,7 @@ README: General Information
 HowToMod: Full Guide on how to mod GridClasses
 PlayerData: All the playerdata you are able to change
 AllTileIDs: All the tile IDs that are standard in GridClasses
+DataFromFirstArgument: All the data gotten from the first argument in a function
 
 Everything is on the latest version.
 
