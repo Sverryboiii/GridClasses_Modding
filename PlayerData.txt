@@ -25,3 +25,31 @@ Formula (Enemy attacks player):
 Player.health -= (enemy.damage * enemy.damage_multiplier - Player.damage_resistance) / Player.protection + enemy.magic_damage
 Formula (Player attacks Enemy):
 enemy.health -= (Player.damage * Player.damage_multiplier - enemy.damage_resistance) / enemy.protection + Player.magic_damage
+
+And the inventory?
+The inventory is a list of dictionaries, which are structured like this:
+iventory_add(Your_item_data)
+
+where Your_item_data must look something like this:
+
+{
+ "id": 1,
+ "name": "stick",
+ "count": 3,
+ "durrability": 20,
+ "damage": 2
+}
+
+Now the forced and loose parts:
+== Forced
+- id
+- name
+- count
+
+== Not forced (in between parenthesis is what it would be if you don't give any info there.)
+- durrability: (1)
+- original_durrability: (durrability)
+- damage: (Nothing)
+- defence: (Nothing)
+- placable: (Not in use!)
+- placable on: (Not in use!)
