@@ -20,6 +20,7 @@ Don't see the path? Run my game once and it should automaticly create Mods.py
 
 If found open it in a text editor (You will see a basic explanation, but you can ignore that).
 
+
 Step 2 (Your first tile change):
 Now that you have opened Mods.py in your text editor you can change tile behavior!
 To change tile behavior you need functions writen as such:
@@ -54,7 +55,7 @@ Now you can change all stats of the player by just making siple functions!
 
 
 Step 3 (The updaters):
-With this script you can do something every second!
+With this script you can do something every second or every frame!
 
 To start this you need to define the function "Second_Updater" like this:
 
@@ -74,3 +75,19 @@ def Frame_Updater(data):
   # This is some higher level code. You don't have to understand this!
   text = data.font.render("This is a modded text!", True, (255, 255, 255)
   screen.blit(text, (0, 0)
+
+
+Step 4 (Your first NTT change):
+You can change the behavior of the NTT of your choice! (NTT = monster. doesn't matter if its passive or not)
+
+To start you need to define the function again.
+The function name is as followed: On_NTT_Update{NTT_name}
+
+With this you can create your own script of what the enemy does every frame!
+
+Here is an example of what you could have:
+
+def On_NTT_Update(data):
+  data.NTT.health = 100
+
+This just tells the game to update the NTTs health to 100 every frame, so the only way to kill it is to do more that 100 damage in 1 frame
