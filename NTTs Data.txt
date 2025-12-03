@@ -11,6 +11,21 @@ You must have the same capitalisation as in this file!
 
 What can you do with all of these NTTs?
 
-You can change the update behavior with the "On_Enemy_Update{NTT_name}" function.
+You can change the update behavior with the "On_NTT_Update{NTT_name}" function.
+
+
+These are some important things you can use with all NTTs.
+Warning: Changing the name may result in your mod breaking and loosing control over the NTT!
+ - NTT.name: The NTTs name
+ - NTT.health: Change the NTTs health
+ - NTT.max_health: Change the NTTs max health
+ - NTT.damage: Change the NTTs max damage
+ - NTT.defence: Change the NTTs damage
+ - NTT.x, NTT.y: Change the NTTs position (These values are x = column, y = row)
+
+The rest are not important or removed later!
+
+Quick hint:
+If you want the NTT to have more data just make it yourself!
 
 For now that's it. stay tuned for future updates!
