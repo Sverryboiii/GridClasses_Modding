@@ -1,0 +1,10 @@
+All the NTTs you can change (standard):
+
+Important:
+You must have the same capitalisation as in this file!
+
+ - Scorch: The flying red monster.
+ - WraithGolem: The golem you find at level 30 of Trial of Abyss.
+ - ShadeFang: The little corrupted snake coming out of the ground.
+ - GrimHowl: The corrupted wolf.
+ - ScorchMaster: The scorch you find at the boss level.
