@@ -1,17 +1,81 @@
-# GridClasses_Modding
+GridClasses_Modding
+
 This Repo is for people who want to mod GridClasses.
+
+If you are new start reading HowToMod.txt! It helps a lot.
+After that feel free to look at Basic_Mod.py to see how a real mod is built up!
+
+Python will be scared about the fact that Player is not defined, but my game handles it. That means that you can create a temp Player
+variable, but you must delete it when the mod is ready (for testing). Else the game tries to access the Player variable, but
+can't because it gets rewritten.
 
 Things found in this repo:
 
 README: General Information
 
+Important for starters:
 HowToMod: Full Guide on how to mod GridClasses
+Basic_Mod: This is so you get a feeling of how mods would look like.
+
 PlayerData: All the playerdata you are able to change
 AllTileIDs: All the tile IDs that are standard in GridClasses
 NTTs data: All the data of the ntt's that are built in GridClasses
 DataFromFirstArgument: All the data gotten from the first argument in a function
 
-Everything is on the latest version.
+Requirements:
+Python 3.11
+
+c:\Users\[your PC username]\AppData\GridClasses\Mods
+If that folder doesn't exist:
+Start GridClasses
+If it still doesn't show up:
+Create it yourself and report the issue to one of our discord mods.
+
+In the game mods folder you MUST have a Mods.py file to declare what file you use for the mod!
+
+Limitations:
+The only limitation GridClasses Modding has is the import limitation!
+You can only have the following modules imported:
+random,
+math,
+time,
+datetime,
+collections,
+itertools,
+functools,
+statistics,
+json,
+re,
+heapq,
+bisect,
+copy,
+cmath,
+decimal,
+dataclasses,
+enum,
+typing,
+uuid,
+base64
+
+If you want more modules to be imported in the future. Ask any discord mod if that is possible. They will tell it to me and I will decide
+if thats possible.
+
+Everything is on the latest version (0.1).
 
 Want to see how to mod earlier versions? Go to the GridClasses discord server and go to the channel #modding-info.
 There will be all documents of modding my game from the earliest version!
+
+And finally for the real programmers here:
+The Mod-loader works like this:
+
+1: The mod loader checks every function for recognized names. If the function name is recognized the mod-loader puts it in the spot it
+belongs to.
+
+2: The mod loader runs the script once in a sandboxed environment. With that it makes sure you didn't import any illegal modules.
+
+3: The mod loader opens the file copies all data adds "From config import Player". That's the reason why the mod works even though your
+text editor doesn't like that you use variables that aren't defined.
+
+4: GridClasses uses the saved data (the file + the functions the mod loader saved) to run them on their desired time!
+
+Now you know how GridClasses' mod loader works!
