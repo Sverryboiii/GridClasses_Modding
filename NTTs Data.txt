@@ -8,3 +8,9 @@ You must have the same capitalisation as in this file!
  - ShadeFang: The little corrupted snake coming out of the ground.
  - GrimHowl: The corrupted wolf.
  - ScorchMaster: The scorch you find at the boss level.
+
+What can you do with all of these NTTs?
+
+You can change the update behavior with the "On_Enemy_Update{NTT_name}" function.
+
+For now that's it. stay tuned for future updates!
