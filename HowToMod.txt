@@ -2,11 +2,6 @@ In this file I will explain how to mod my game.
 
 WARNING: If you mod your game your account has a permanent watermark!
 
-
-Summary:
-Make a function to change a tiles behavior: def Tile{tile_id}():
-Tell GridClasses (not) to continue the tile behavior check: return True if You also want normal behavior, return False if you don't
-
 Changable stuff:
 In game player data. (It's not possible to change data of your account!
 
