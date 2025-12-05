@@ -1,0 +1,16 @@
+How to structure your code?
+
+Well first thing to know: Your functions may NOT be in a class, because then the game doesn't know what to do!
+
+Alright for every different event type you create a different function.
+Don't want to use all functions? That's alright, because GridClasses has a smart system that doesn't need all functions!
+
+Next up you get all the data you need from the first argument.
+
+Example structure:
+
+def {Function name}(data):
+  {Whatever you want this function to do}
+  return {a dictionary of items}
+
+For now that's it. I will update this in the future!
