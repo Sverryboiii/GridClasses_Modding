@@ -2,6 +2,8 @@ Here I will let post all the different functions and their uses as a list.
 
  - Tile{id}
 Change the behavior of a tile.
+ - On_NTT_Update{NTT}
+Change the update behavior of an NTT (updates every frame).
  - Second_Updater
 Code that gets runned every second.
  - Frame_Updater
