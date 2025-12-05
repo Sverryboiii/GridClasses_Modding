@@ -14,13 +14,15 @@ Things found in this repo:
 README: General Information
 
 Important for starters:
-HowToMod: Full Guide on how to mod GridClasses
+HowToMod: Full Guide on how to mod GridClasses.
 Basic_Mod: This is so you get a feeling of how mods would look like.
+Functions: Find all usable functions.
+Structure: Find how to structure your code.
 
-PlayerData: All the playerdata you are able to change
-AllTileIDs: All the tile IDs that are standard in GridClasses
-NTTs data: All the data of the ntt's that are built in GridClasses
-DataFromFirstArgument: All the data gotten from the first argument in a function
+PlayerData: All the playerdata you are able to change.
+AllTileIDs: All the tile IDs that are standard in GridClasses.
+NTTs data: All the data of the ntt's that are built in GridClasses.
+DataFromFirstArgument: All the data gotten from the first argument in a function.
 
 Requirements:
 Python 3.11
