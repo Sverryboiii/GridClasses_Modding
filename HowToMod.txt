@@ -48,8 +48,8 @@ Next up you don't want the grass tile to behave as normal after that.
 That's easily done with python's return function, so your final function will be:
 
 def Tile0(data):          # Tell GridClasses the behavior of grass (id: 0) must change
-  Player.health += 1  # Tell GridClasses to give the player +1 health
-  return False        # Tell GridClasses NOT to continue with the tile check
+  Player.health += 1      # Tell GridClasses to give the player +1 health
+  return {"Check": False} # Tell GridClasses NOT to continue with the tile check
 
 Now you can change all stats of the player by just making siple functions!
 
