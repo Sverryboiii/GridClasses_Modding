@@ -12,6 +12,8 @@ In the whole file I use "data" for the first argument.
 
 All the different thing you can get from the first argument:
 
+ - data.Player:
+With this you can access all the players data.
  - data.map_size:
 You can get 2 items from this: width and height. How to get them: data.map_size[0] for width and data.map_size[1] for height
  - data.dt:
