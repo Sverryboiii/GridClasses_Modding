@@ -8,7 +8,7 @@ Claimed_tiles = []
 
 # When updating scorches don't move, but give +1 hp
 def On_Enemy_UpdateScorch(data):
-  data.enemy.health += 1
+  data.NTT.health += 1
   return False
 
 # Every frame show the Mod score on screen
@@ -19,7 +19,7 @@ def Frame_Updater(data):
 
 # Every second decrease the players health by 1
 def Second_Updater(data):
-  Player.health -= 1
+  data.Player.health -= 1
 
 # When the player steps on a grass tile and the position of that grass tile isn't registered
 # you get +1 mod score
@@ -30,11 +30,11 @@ def Tile0(data):
       return True
   Claimed_tiles.append(data.new_pos)
   Mod_Score += 1
-  return True
+  return {"Check": True}
 
 # When the player steps on a door tile the mod-score gets converted to normal score
 # (1000 score / 1 mod score)
 def Tile2(data):
   global Mod_Score
-  Player.score += 1000*Mod_Score
-  return True
+  data.Player.score += 1000*Mod_Score
+  return {"Check": True}
