@@ -1,0 +1,21 @@
+In python you have a cool keyword called "return".
+
+But what form do you use to return?
+Well, you must use a type called a dictionary. (You can find what that is online)
+
+Of course we are going to make use of that, but we have different types of functions.
+Here is everything you need to know about what you can return.
+
+ = Update loops (Functions that repeat once per second/frame ect.):
+No returnable arguments.
+
+ = Tile behavior change:
+Returnable arguments:
+ - "Check": Decides if the game may or may not execute the normal tile behavior.
+ - "Move": Decides if the player moves to the chosen spot.
+
+ = NTT updates:
+No returnable arguments.
+
+Summary:
+Return type: dict
