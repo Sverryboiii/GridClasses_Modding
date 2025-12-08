@@ -2,12 +2,10 @@ GridClasses_Modding
 
 This Repo is for people who want to mod GridClasses.
 
+First thing's first: You do NOT need a module installed, so don't go looking for it!
+
 If you are new start reading HowToMod.txt! It helps a lot.
 After that feel free to look at Basic_Mod.py to see how a real mod is built up!
-
-Python will be scared about the fact that Player is not defined, but my game handles it. That means that you can create a temp Player
-variable, but you must delete it when the mod is ready (for testing). Else the game tries to access the Player variable, but
-can't because it gets rewritten.
 
 Things found in this repo:
 
