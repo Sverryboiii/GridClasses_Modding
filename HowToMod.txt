@@ -7,6 +7,8 @@ In game player data. (It's not possible to change data of your account!
 
 
 Important:
+You do NOT need any module installed, because you accept arguments in all functions!
+
 For a quick look at all the different types of functions you can use go to Functions.txt!
 After defining a function you MUST accept a argument for the data!
 So you do something like this:
