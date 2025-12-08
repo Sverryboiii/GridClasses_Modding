@@ -1,6 +1,6 @@
 This file will be for accessing player data.
 
-The variable I use for the in game player is "Player" (You can use this without importing any module or accept this as argument)
+You must use data.Player for this to work. (If you change the first argument in your function it changes to that name!)
 
 All player data you can access:
  - General player data
@@ -26,9 +26,10 @@ Player.health -= (enemy.damage * enemy.damage_multiplier - Player.damage_resista
 Formula (Player attacks Enemy):
 enemy.health -= (Player.damage * Player.damage_multiplier - enemy.damage_resistance) / enemy.protection + Player.magic_damage
 
-And the inventory?
+
+Inventory:
 The inventory is a list of dictionaries, which are structured like this:
-iventory_add(Your_item_data)
+data.iventory_add(Your_item_data)
 
 where Your_item_data must look something like this:
 
