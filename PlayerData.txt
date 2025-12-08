@@ -34,7 +34,6 @@ data.iventory_add(Your_item_data)
 where Your_item_data must look something like this:
 
 {
- "id": 1,
  "name": "stick",
  "count": 3,
  "durrability": 20,
@@ -43,7 +42,6 @@ where Your_item_data must look something like this:
 
 Now the forced and loose parts:
 == Forced
-- id
 - name
 - count
 
