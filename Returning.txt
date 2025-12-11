@@ -17,5 +17,10 @@ Returnable arguments:
  = NTT updates:
 No returnable arguments.
 
+ = Load_contents:
+Returnable arguments:
+ - "immages": Load your images with data.res_path("path")!
+  - "Tiles": Loads the tile ids you want
+
 Summary:
 Return type: dict
