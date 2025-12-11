@@ -1,4 +1,5 @@
 This file will go over all the data rechieved from the first argument in a function.
+Exceptions at the end!
 
 For those who don't know what I said:
 
@@ -24,3 +25,12 @@ This is the display so you can display anything you want (GridClasses is made wi
 You can use this font to create text (to display text on the screen you got to go take a pygame lesson).
  - data.new_pos:
 This gives a tuple of the position of the player (x, y)
+
+
+Exceptions:
+
+Load_contents:
+ - data.res_path:
+This function takes the path from your Mod.zip file (start at Mod.zip like such "Assets/Myasset1") and gives back a full path!
+
+All the other data parts are not included in here!
