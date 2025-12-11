@@ -6,6 +6,17 @@ I made a mod that uses every aspect of the mod-loader
 Mod_Score = 0
 Claimed_tiles = []
 
+# load stuff in
+def Load_contents(data):
+  loaded_data = {}
+  loaded_data["images"]= {
+    "TileIds": {
+      15: data.res_path("assets/MyTile1"),
+      16: data.res_path("assets/MyTile2")
+    }
+  }
+  return loaded_data
+
 # When updating scorches don't move, but give +1 hp
 def On_Enemy_UpdateScorch(data):
   data.NTT.health += 1
