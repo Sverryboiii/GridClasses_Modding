@@ -31,6 +31,6 @@ Exceptions:
 
 Load_contents:
  - data.res_path:
-This function takes the path from your Mod.zip file (start at Mod.zip like such "Assets/Myasset1") and gives back a full path!
+This function takes the path from your AppData/Local/Mod/ folder (start at Mod like such "Assets/Myasset1") and gives back a full path!
 
 All the other data parts are not included in here!
